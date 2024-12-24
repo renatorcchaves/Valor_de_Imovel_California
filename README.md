@@ -1,12 +1,19 @@
 # Modelo de projeto de ciência de dados
 
-Modelo de projeto de ciência de dados para ser utilizado como referência em projetos
-futuros. Desenvolvido por mim, [Francisco Bustamante](https://github.com/chicolucio),
-para alunos iniciantes em ciência de dados de meus cursos e mentorias.
+Origem: https://www.kaggle.com/datasets/camnugent/california-housing-prices/data
 
-Inspiração: [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+Este conjunto de dados foi derivado do censo dos EUA de 1990, usando uma linha por grupo
+de blocos censitários. Um grupo de blocos é a menor unidade geográfica para a qual o
+Escritório do Censo dos EUA publica dados amostrais (um grupo de blocos geralmente tem
+uma população de 600 a 3.000 pessoas).
 
-Clique no botão **Use this template** para criar um novo repositório com base neste modelo.
+Um domicílio (*household*) é um grupo de pessoas que reside em uma casa. Como o número
+médio de cômodos e quartos neste conjunto de dados é fornecido por domicílio, essas
+colunas podem apresentar valores surpreendentemente altos para grupos de blocos com
+poucos domicílios e muitas casas vazias, como em resorts de férias.
+
+A variável alvo é o valor mediano das casas para os distritos da Califórnia, expressa em
+dólares.
 
 ## Organização do projeto
 
@@ -39,13 +46,7 @@ Clique no botão **Use this template** para criar um novo repositório com base 
 
 ## Configuração do ambiente
 
-1. Faça o clone do repositório que será criado a partir deste modelo.
-
-    ```bash
-    git clone ENDERECO_DO_REPOSITORIO
-    ```
-
-2. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
+1. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
 
     a. Caso esteja utilizando o `conda`, exporte as dependências do ambiente para o arquivo `ambiente.yml`:
 
@@ -57,22 +58,6 @@ Clique no botão **Use this template** para criar um novo repositório com base 
     para o arquivo `requirements.txt` ou outro formato de sua preferência. Adicione o
     arquivo ao controle de versão, removendo o arquivo `ambiente.yml`.
 
-3. Verifique o arquivo `notebooks/01-fb-exemplo.ipynb` para exemplos
-de uso do código.
-4. Renomeie o arquivo `notebooks/01-fb-exemplo.ipynb` para um nome
-mais apropriado ao seu projeto. E siga a convenção de nomenclatura para os demais
-notebooks.
-5. Remova arquivos de exemplo e adicione os arquivos de dados e notebooks do seu
-projeto.
-6. Verifique o arquivo `notebooks/src/config.py` para configurações básicas do projeto.
-Modifique conforme necessário, adicionando ou removendo caminhos de arquivos e
-diretórios.
-7. Atualize o arquivo `referencias/01_dicionario_de_dados.md` com o dicionário de dados
-do seu projeto.
-8. Atualize o `README.md` com informações sobre o seu projeto.
-9. Adicione uma licença ao projeto. Clique
-[aqui](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-se precisar de ajuda para escolher uma licença.
 10. Renomeie o arquivo `.env.exemplo` para `.env`
 11. Adicione variáveis de ambiente sensíveis ao arquivo `.env`.
 
@@ -82,5 +67,3 @@ arquivos de Notebook (para aqueles que usam ferramentas como
 outros arquivos e diretórios do `.gitignore` conforme necessário. Caso deseje adicionar
 forçadamente um Notebook ao controle de versão, faça um commit forçado com o
 comando `git add --force NOME_DO_ARQUIVO.ipynb`.
-
-Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
