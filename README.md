@@ -48,6 +48,12 @@ Por fim, através do modelo final, foi comparado os resultados preditos pelo mod
 
 ![Valores Preditos X Valores Reais](relatorios/Analisando%20Valores%20Preditos%20X%20Valores%20Reais%20-%20Melhor%20Modelo.png)
 
+## Streamlit - Simulação de valor de imóvel
+
+Caso queira simular qual era o preço de um imóvel da California na década de 90 na plataforma do Streamlit, com base no modelo desenvolvido neste projeto, foi criado o arquivo "home_v1.py" para ser usado pelo streamlit. Para obter o resultado da simulação, basta inputar o condado no qual o imóvel pertence, a idade do imóvel, e a renda média anual dos proprietários do local. As demais features foram obtidas através valor mediano por condado. Esse estudo dos valores medianos foi realizado através do arquivo "-02-Analise dos Dados Geograficos.ipynb" da pasta notebooks, e está sendo carregado dentro do arquivo "home_v1.py".
+
+Você pode acessar esse aplicativo do Streamlit e realizar a simulação através da URL: https://valordeimovelcalifornia-apprenato.streamlit.app/
+
 ## Organização das pastas do projeto
 
 ```
